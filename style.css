@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+header {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+
+/* ========================= */
+/* ALL MAIN PAGES */
+/* ========================= */
+
+form,
+.payment-summary,
+.payment-page {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ========================= */
+/* STUDENT FORM */
+/* ========================= */
+
+form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f3c88;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #162d68;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+
+/* ========================= */
+/* PAYMENT SUMMARY */
+/* ========================= */
+
+.payment-summary {
+    display: none;
+}
+
+.payment-summary h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+
+/* ========================= */
+/* BACK BUTTON */
+/* ========================= */
+
+.back-button {
+    background-color: #777;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+
+/* ========================= */
+/* MAKE PAYMENT PAGE */
+/* ========================= */
+
+.payment-page {
+    display: none;
+}
+
+.payment-page h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* ========================= */
+/* PAYMENT AMOUNT */
+/* ========================= */
+
+.payment-amount {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f4f6f8;
+    border-radius: 8px;
+}
+
+.payment-amount span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.payment-amount strong {
+    font-size: 30px;
+}
+
+
+/* ========================= */
+/* PAYMENT REFERENCE */
+/* ========================= */
+
+.payment-reference {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f4f6f8;
+    border-radius: 8px;
+}
+
+.payment-reference span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.payment-reference strong {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+/* ========================= */
+/* PAY BUTTON */
+/* ========================= */
+
+#payButton {
+    margin-top: 25px;
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ASSA UCC Dues Payment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Actuarial Science Students' Association</h1>
+        <p>Semester Dues Payment Portal</p>
+    </header>
+
+    <main>
+
+        <!-- ========================= -->
+        <!-- STUDENT DUES FORM -->
+        <!-- ========================= -->
+
+        <form id="duesForm">
+
+            <h2>Pay Your Semester Dues</h2>
+
+            <!-- Full Name -->
+            <label for="fullName">Full Name</label>
+
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <!-- Student ID -->
+            <label for="studentId">Student ID</label>
+
+            <input
+                type="text"
+                id="studentId"
+                name="studentId"
+                placeholder="e.g. PS/ASC/2023/0000"
+                required
+            >
+
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <!-- Level -->
+            <label for="level">Level</label>
+
+            <select id="level" name="level" required>
+
+                <option value="">
+                    Select your level
+                </option>
+
+                <option value="100">
+                    Level 100
+                </option>
+
+                <option value="200">
+                    Level 200
+                </option>
+
+                <option value="300">
+                    Level 300
+                </option>
+
+                <option value="400">
+                    Level 400
+                </option>
+
+            </select>
+
+
+            <!-- Membership -->
+            <label for="membership">
+                Membership Type
+            </label>
+
+            <select id="membership" name="membership" required>
+
+                <option value="">
+                    Select membership type
+                </option>
+
+                <option value="general">
+                    General Member - GH₵25
+                </option>
+
+                <option value="cc">
+                    CC Member - GH₵20
+                </option>
+
+            </select>
+
+
+            <!-- Semester -->
+            <label for="semester">
+                Semester
+            </label>
+
+            <select id="semester" name="semester" required>
+
+                <option value="">
+                    Select semester
+                </option>
+
+                <option value="first">
+                    First Semester
+                </option>
+
+                <option value="second">
+                    Second Semester
+                </option>
+
+            </select>
+
+
+            <!-- Amount -->
+            <label for="amount">
+                Amount to Pay
+            </label>
+
+            <input
+                type="text"
+                id="amount"
+                name="amount"
+                value="GH₵0"
+                readonly
+            >
+
+
+            <!-- Submit -->
+            <button
+            id="continueButton"
+             type="button"
+                           >
+                  Continue to Payment
+                   </button>
+        </form>
+
+
+        <!-- ========================= -->
+        <!-- PAYMENT SUMMARY -->
+        <!-- ========================= -->
+
+        <div
+            id="paymentSummary"
+            class="payment-summary"
+        >
+
+            <h2>Payment Summary</h2>
+
+
+            <div class="summary-item">
+                <span>Full Name</span>
+                <strong id="summaryName"></strong>
+            </div>
+
+
+            <div class="summary-item">
+                <span>Student ID</span>
+                <strong id="summaryStudentId"></strong>
+            </div>
+
+
+            <div class="summary-item">
+                <span>Level</span>
+                <strong id="summaryLevel"></strong>
+            </div>
+
+
+            <div class="summary-item">
+                <span>Membership</span>
+                <strong id="summaryMembership"></strong>
+            </div>
+
+
+            <div class="summary-item">
+                <span>Semester</span>
+                <strong id="summarySemester"></strong>
+            </div>
+
+
+            <div class="total">
+                <span>Total Dues</span>
+                <strong id="summaryAmount"></strong>
+            </div>
+
+
+            <button
+                id="proceedButton"
+                type="button"
+            >
+                Proceed to Payment
+            </button>
+
+
+            <button
+                id="backButton"
+                type="button"
+                class="back-button"
+            >
+                Go Back
+            </button>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- PAYMENT PAGE -->
+        <!-- ========================= -->
+
+        <div
+            id="paymentPage"
+            class="payment-page"
+        >
+
+            <h2>Make Payment</h2>
+
+
+            <!-- Amount -->
+            <div class="payment-amount">
+
+                <span>Amount to Pay</span>
+
+                <strong id="paymentAmount">
+                    GH₵0
+                </strong>
+
+            </div>
+
+
+            <!-- Payment Reference -->
+            <div class="payment-reference">
+
+                <span>Payment Reference</span>
+
+                <strong id="paymentReference">
+                    ---
+                </strong>
+
+            </div>
+
+
+            <!-- Pay Button -->
+            <button
+                id="payButton"
+                type="button"
+            >
+                Pay Now
+            </button>
+
+
+            <!-- Back Button -->
+            <button
+                id="paymentBackButton"
+                type="button"
+                class="back-button"
+            >
+                Go Back
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
